@@ -29,7 +29,7 @@ app.use("/api", require("./Routers/upload"));
 app.use(express.static("https://haimazu-htb.onrender.com/build"));
 
 app.get("*", (req, res) => {
-  res.send("https://haimazu-htb.onrender.com/build/index.html"));
+  res.send("https://haimazu-htb.onrender.com/build/index.html");
 });
 
 //app.get("*", (req, res) => {
