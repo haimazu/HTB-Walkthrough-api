@@ -31,7 +31,7 @@ app.use("/api", require("./Routers/upload"));
 //   res.sendFile(path.resolve(__dirname, "Frontend", "build", "index.html"));
 // });
 
-app.use(express.static("/build"));
+app.use(express.static("build"));
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "build", "index.html"));
